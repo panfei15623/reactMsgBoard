@@ -1,0 +1,185 @@
+$fontBig: 14px;
+$fontSmall: 13px;
+$lightGray: #9B9B9B;
+$pinkColor: #EC5CA4;
+$borderBottom: 1px solid $pinkColor;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #EEF3FA;
+  font-size: $fontBig;
+}
+
+#contain {
+  max-width: 987px;
+  min-width: 460px;
+  min-height: 653px;
+  //border: 1px solid;
+  padding: 10px 30px 30px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+
+.underline {
+  border-bottom: $borderBottom;
+  line-height: 30px;
+}
+
+.link {
+  font-size: $fontSmall;
+  text-decoration: none;
+  color: $pinkColor;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#comment {
+  overflow: hidden;
+  padding: 15px;
+  border-bottom: $borderBottom;
+  img {
+    width: 50px;
+    height: 50px;
+    //border: $borderBottom;
+    float: left;
+    border-radius: 5px;
+    margin: 5px 24px 0px 0px;
+  }
+  .author {
+    color: $pinkColor;
+  }
+  #msg {
+    float: left;
+    .time {
+      margin-top: 80px;
+      color: $lightGray;
+      font-size: $fontSmall;
+    }
+  }
+  .msgTitle {
+    line-height: 20px;
+    >span:nth-child(2){
+      color: $lightGray;
+      font-size: $fontSmall;
+      padding-left: 10px;
+    }
+  }
+}
+
+.form {
+  input, textarea {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #DDDDDD;
+  }
+  input {
+    border-bottom: none;
+    background-color: #F3F2F2;
+  }
+  textarea {
+    height: 80px;
+  }
+  button {
+    font-size: $fontBig;
+    padding: 5px 20px;
+    background-color: #F480BF;
+    border-radius: 4px;
+    border: 1px solid $pinkColor;
+    color: white;
+    margin-left: 10px;
+    outline: none;
+  }
+}
+
+.select {
+  position: relative;
+  .triangle {
+    float: right;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid #EC5CA4;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+    &:hover + #selectBorder{
+      display: block;
+    }
+  }
+  #selectBorder {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FBCFE0;
+    margin: 0 auto;
+    border-bottom: none;
+    float: right;
+    display: none;
+    cursor: pointer;
+    &:hover {
+      display: block;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 15px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      margin-right: 17px;
+      border-bottom: 1px solid #FBCFE0;
+    }
+    #option {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      position: absolute;
+      top: 16px;
+      right: 0px;
+      border: 1px solid #FBCFE0;
+      border-top: none;
+      font-size: 13px;
+      padding: 3px 10px;
+      text-align: center;
+      color: #EC5CA4;
+      &:hover {
+        background-color: #FFEFF5;
+      }
+    }
+  }
+}
+
+.pageNums {
+  position: absolute;
+  bottom: 15px;
+  right: 100px;
+  .pageNum{
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 0px;
+    font-size: 14px;
+  }
+  .prev, .next {
+    font-size: 12px;
+  }
+}
+
+.canClick {
+  color: $pinkColor;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.noCanClick {
+  color: #000;
+  cursor: text;
+  text-decoration: none;
+}

@@ -1,0 +1,169 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #EEF3FA;
+  font-size: 14px;
+}
+#contain {
+  max-width: 987px;
+  min-width: 460px;
+  min-height: 653px;
+  padding: 10px 30px 30px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+.underline {
+  border-bottom: 1px solid #EC5CA4;
+  line-height: 30px;
+}
+.link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #EC5CA4;
+}
+.link:hover {
+  text-decoration: underline;
+}
+#comment {
+  overflow: hidden;
+  padding: 15px;
+  border-bottom: 1px solid #EC5CA4;
+}
+#comment img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 5px;
+  margin: 5px 24px 0px 0px;
+}
+#comment .author {
+  color: #EC5CA4;
+}
+#comment #msg {
+  float: left;
+}
+#comment #msg .time {
+  margin-top: 80px;
+  color: #9B9B9B;
+  font-size: 13px;
+}
+#comment .msgTitle {
+  line-height: 20px;
+}
+#comment .msgTitle > span:nth-child(2) {
+  color: #9B9B9B;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+.form input {
+  border-bottom: none;
+  background-color: #F3F2F2;
+}
+.form textarea {
+  height: 80px;
+}
+.form button {
+  font-size: 14px;
+  padding: 5px 20px;
+  background-color: #F480BF;
+  border-radius: 4px;
+  border: 1px solid #EC5CA4;
+  color: white;
+  margin-left: 10px;
+  outline: none;
+}
+.select {
+  position: relative;
+}
+.select .triangle {
+  float: right;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #EC5CA4;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  cursor: pointer;
+}
+.select .triangle:hover + #selectBorder {
+  display: block;
+}
+.select #selectBorder {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #FBCFE0;
+  margin: 0 auto;
+  border-bottom: none;
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+.select #selectBorder:hover {
+  display: block;
+}
+.select #selectBorder:before {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 15px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 17px;
+  border-bottom: 1px solid #FBCFE0;
+}
+.select #selectBorder #option {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  border: 1px solid #FBCFE0;
+  border-top: none;
+  font-size: 13px;
+  padding: 3px 10px;
+  text-align: center;
+  color: #EC5CA4;
+}
+.select #selectBorder #option:hover {
+  background-color: #FFEFF5;
+}
+.pageNums {
+  position: absolute;
+  bottom: 15px;
+  right: 100px;
+}
+.pageNums .pageNum {
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 0px;
+  font-size: 14px;
+}
+.pageNums .prev,
+.pageNums .next {
+  font-size: 12px;
+}
+.canClick {
+  color: #EC5CA4;
+  text-decoration: none;
+}
+.canClick:hover {
+  text-decoration: underline;
+}
+.noCanClick {
+  color: #000;
+  cursor: text;
+  text-decoration: none;
+}
