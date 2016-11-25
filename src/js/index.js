@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentBox from './commentBox';
 
-import '../css/comment.less';
+import '../css/comment';
 
 
 ReactDOM.render(<div>
