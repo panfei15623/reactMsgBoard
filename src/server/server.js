@@ -9,11 +9,6 @@ var mysql = require('mysql');  //调用Mysql模块
 
 //创建一个connection
 var connection = mysql.createConnection({
-    host: 'jiaxuelei.com',  //主机
-    user: 'panf',           //mysql认证用户名
-    password: 'panf',       //mysql认证密码
-    port: '3306',            //端口号
-    database: "panf"
     //host: 'localhost',  //主机
     //user: 'root',           //mysql认证用户名
     //password: 'root',       //mysql认证密码
